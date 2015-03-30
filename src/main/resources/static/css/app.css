@@ -1,0 +1,57 @@
+body {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a.crest {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.crest img {
+    display: inline;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+#teams .crest img {
+    width: 100%;
+}
+
+#teamCrests {
+    display: block;
+    margin: 0 15px;
+}
+
+#teamCrests:before, #teamCrests:after {
+    content: "";
+    height: 2px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(147,147,147,1) 50%, rgba(0,0,0,0) 100%);
+    display: block;
+    margin: 20px 0;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
+.slick-slide {
+    height: auto !important;
+    text-align: center;
+}
+
+.tweet {
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.tweet:after {
+    content: "";
+    height: 1px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(147,147,147,1) 50%, rgba(0,0,0,0) 100%);
+    display: block;
+    margin: 5px 0;
+}
