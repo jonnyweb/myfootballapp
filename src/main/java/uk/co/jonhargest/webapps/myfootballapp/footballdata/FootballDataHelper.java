@@ -11,16 +11,16 @@ import java.util.List;
 
 public abstract class FootballDataHelper {
 
-    public static List<Team> createTeamList(League league, LeagueTable table){
+    public static List<Team> createTeamList(League league, LeagueTable table) {
         List<Team> teams = new LinkedList();
 
         for (LeagueStanding leagueStanding : table.getStanding()) {
             Iterator<Team> iterator = league.getTeams().iterator();
 
-            while(iterator.hasNext()){
+            while (iterator.hasNext()) {
                 Team team = iterator.next();
 
-                if(team.getName().equals(leagueStanding.getTeamName())){
+                if (team.getName().equals(leagueStanding.getTeamName())) {
                     team.setLeagueStanding(leagueStanding);
                     teams.add(team);
 

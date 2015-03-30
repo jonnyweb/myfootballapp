@@ -42,7 +42,7 @@ public abstract class TweetHelper {
     }
 
     public static String replaceUrls(String tweet, List<UrlEntity> entities) {
-        if(entities != null) {
+        if (entities != null) {
             for (UrlEntity urlEntity : entities) {
                 String url = String.format(URL_ENTITY, urlEntity.getExpandedUrl(), urlEntity.getDisplayUrl());
                 tweet = replaceTextInTweet(tweet, urlEntity.getUrl(), url);
@@ -53,7 +53,7 @@ public abstract class TweetHelper {
     }
 
     public static String replaceMedia(String tweet, List<MediaEntity> entities) {
-        if(entities != null) {
+        if (entities != null) {
             for (MediaEntity mediaEntity : entities) {
                 String url = String.format(URL_ENTITY, mediaEntity.getExpandedUrl(), mediaEntity.getUrl());
                 tweet = replaceTextInTweet(tweet, mediaEntity.getUrl(), url);
@@ -65,7 +65,7 @@ public abstract class TweetHelper {
     }
 
     public static String replaceMentions(String tweet, List<MentionEntity> entities) {
-        if(entities != null) {
+        if (entities != null) {
             for (MentionEntity mentionEntity : entities) {
                 String mention = String.format(MENTION_ENTITY, mentionEntity.getScreenName(), mentionEntity.getScreenName());
                 tweet = replaceTextInTweet(tweet, "@" + mentionEntity.getScreenName(), mention);
@@ -75,7 +75,7 @@ public abstract class TweetHelper {
         return tweet;
     }
 
-    private static String replaceTextInTweet(String tweet, String replace, String formatted){
+    private static String replaceTextInTweet(String tweet, String replace, String formatted) {
         return tweet.replaceAll("(?i)" + replace, formatted);
     }
 

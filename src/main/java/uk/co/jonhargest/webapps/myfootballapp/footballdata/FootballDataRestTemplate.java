@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public class FootballDataRestTemplate extends RestTemplate {
 
-    public FootballDataRestTemplate(){
+    public FootballDataRestTemplate() {
         super();
 
         List<ClientHttpRequestInterceptor> interceptors = new ArrayList<ClientHttpRequestInterceptor>();

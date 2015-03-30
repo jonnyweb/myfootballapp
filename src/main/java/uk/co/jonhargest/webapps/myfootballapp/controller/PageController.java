@@ -9,14 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 import uk.co.jonhargest.webapps.myfootballapp.bean.footballdata.League;
-import uk.co.jonhargest.webapps.myfootballapp.bean.footballdata.LeagueStanding;
 import uk.co.jonhargest.webapps.myfootballapp.bean.footballdata.LeagueTable;
-import uk.co.jonhargest.webapps.myfootballapp.bean.footballdata.Team;
 import uk.co.jonhargest.webapps.myfootballapp.footballdata.FootballDataRestTemplate;
-
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
 import static uk.co.jonhargest.webapps.myfootballapp.footballdata.FootballDataHelper.createTeamList;
 

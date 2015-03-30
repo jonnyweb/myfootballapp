@@ -32,7 +32,7 @@ public class TwitterController {
     public ResponseEntity<String> retweet(@PathVariable("id") long id) {
         ResponseEntity<String> response;
 
-        if(twitter.isAuthorized()) {
+        if (twitter.isAuthorized()) {
             twitter.timelineOperations().retweet(id);
             response = new ResponseEntity<String>(HttpStatus.OK);
         } else {

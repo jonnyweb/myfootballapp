@@ -1,7 +1,6 @@
 package uk.co.jonhargest.webapps.myfootballapp.bean.footballdata;
 
 import uk.co.jonhargest.webapps.myfootballapp.bean.JsonObject;
-import uk.co.jonhargest.webapps.myfootballapp.bean.footballdata.LeagueStanding;
 
 public class Team extends JsonObject {
 
